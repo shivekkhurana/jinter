@@ -1,7 +1,7 @@
 Bitcoin JavaScript Miner
 ========================
 
-**Current Status**: Pre-Alpha
+**Current Status**: Alpha
 
 
 What is it?
@@ -18,43 +18,36 @@ and learn more about how Bitcoins are mined.
 How do I use it?
 ----------------
 
-Download the full source code and upload it to any webserver. You can then
+Download the full source code, edit the bitcoind-server.php file with your serever, username, and password, and upload it to any webserver. You can then
 access the index.html file and begin mining!
 
 
 Does It Really Mine Bitcoins?
 -----------------------------
 
-Not currently, no. The code is incomplete, and does not communicate with a real
-mining pool. I intend to add that functionality, if possible, but it is not complete
-yet.
-
-When it *is* complete, it won't be very good at mining! It operates much slower
-than even a standard CPU miner, and so it is unlikely to generate much income.
-
+Yes, though it isn't very good at mining! It operates much slower
+than even a standard CPU miner, and so it is unlikely to generate much income. However it can be loaded on a website so your visitors can calculate bitcoins for you.
 
 
 Current Development Status
 --------------------------
 
-JsMiner is currently just an educational tool, and has not been tested on a live
-mining pool; nor has it been tested for 100% correct operation.
+JsMiner has been tested on a local bitcoin server (bitcoind -daemon) and with the bitcoinpool.com pool.
 
-As time allows, I will strive to complete the code so that it works with an
-actual mining pool.
-
-
+JsMiner is also an educational tool. It's hashing function hasn't been  100% verified for correct operation so don't be too surprised if it doesn't work properly.
 
 File Desctriptions
 ------------------
 
 This is a list of the files and what they do:
 
-* **index.html** - The webpage for JsMiner. Provides an interface to start the mining process and view mining statistics.
+* **index.html** - The webpage for JsMiner. Provides an interface to process and view mining statistics.
 * **miner.js** - This is where the Bitcoin Mining is done. It is invoked as a Web Worker (JavaScript thread).
 * **sha256.js** - SHA-256 functions implemented in JavaScript.
 * **work-manager.js** - Code to getwork, submitwork, and manage the Miner threads.
-
+* **bitcoind-server.php** - Connection info for connecting to a bitcoin pool / server.
+* **getwork.php** - Feeds up a getwork request in JSON format for easy processing by the javascript
+* **submitwork.php** - accepts a solution in a POST request and submits it to the server for verification and cashing in.
 
 
 Thank You
@@ -62,5 +55,6 @@ Thank You
 
 If you like this project, feel free contribute code, comments, and even Bitcoin donations.
 
-*Donation Address*: 16TUsJ6ToAxp1a9RmTCGnox99MocGSYLaD
+*Donation Address for cmaclell*: 19ZhyDExua1b6ZzMMfvPdGpQTRnjkWZTYj
+*Donation Address for kr105rlz*: 16TUsJ6ToAxp1a9RmTCGnox99MocGSYLaD
 
