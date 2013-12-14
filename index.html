@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="jquery-1.5.2.min.js"></script>
-		<script src="sha256.js"></script>
-		<script src="work-manager.js"></script>
-		<link rel="stylesheet" href="style.css">
+		<script src="js/lib/jquery-1.5.2.min.js"></script>
+		<script src="js/lib/jquery.jsonrpcclient.js"></script>
+		<script src="js/lib/sha256.js"></script>
+		<script src="js/work-manager.js"></script>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	
 	<body>
-		<form>
-			<label for="total-hashes">Total Hashes</label><br/>
-			<input id="total-hashes"/>
+		<div id="wrapper">
+			<form>
+				<label for="total-hashes">Total Hashes</label>
+				<input id="total-hashes"/>
 
-			<label for="hashes-per-second">Hash/s</label><br/>
-			<input id="hashes-per-second"/>
-			
-			<label for="golden-ticket">Golden Ticket</label><br>
-			<input id="golden-ticket"/>
-			<button onclick="begin_mining()">Start</button>
-		</form>
+				<label for="hashes-per-second">Hash/s</label>
+				<input id="hashes-per-second"/>
+				
+				<label for="golden-ticket">Golden Ticket</label>
+				<input id="golden-ticket"/>
+				<button onclick="begin_mining()">Start</button>
+			</form>
+		</div>
 	</body>
 </html>

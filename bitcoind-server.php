@@ -1,11 +1,10 @@
 <?php
 	require_once 'jsonRPCClient.php';
 	
-	$url = "127.0.0.1";
+	$url = "api.bitcoin.cz";
 	$port = "8332";
-	$username = "un";
-	$password = "pw";	
+	$username = "shivekkhurana.worker1";
+	$password = "worker1";	
 
 	$bitcoin = new jsonRPCClient('http://'.$username.':'.$password.'@'.$url.':'.$port.'/');
-
 ?>

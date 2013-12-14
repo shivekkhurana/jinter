@@ -5,6 +5,7 @@ function begin_mining()
 	cache: false,
 	success: function(data){
 	    var response = JSON.parse(data);
+	    console.log(response);
 	    
 	    var job = {};
 	    
