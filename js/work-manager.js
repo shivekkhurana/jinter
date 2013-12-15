@@ -21,7 +21,7 @@ function begin_mining()
 	    // Set startdate
 	    job.start_date = new Date().getTime();	    
 	    
-	    var worker = new Worker("miner.js");
+	    var worker = new Worker("js/miner.js");
 	    worker.onmessage = onWorkerMessage;
 	    worker.onerror = onWorkerError;
 	    worker.postMessage(job);

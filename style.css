@@ -13,3 +13,8 @@ input{
 	margin:20px 0;
 	border:0;
 }
+
+label{
+	padding:20px 0 0;
+	border-top:1px solid #333;
+}

@@ -9,7 +9,7 @@
 
 var TotalHashes = 0;
 
-importScripts('sha256.js');
+importScripts('lib/sha256.js');
 
 // Function: scanhash
 // 
